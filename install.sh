@@ -11,8 +11,8 @@ mount "$disk""p2" /mnt
 mkdir -p /mnt/boot
 mount "$disk""p1" /mnt/boot
 mkdir -p /mnt/etc/nixos
-curl -L -o /mnt/etc/nixos/configuration.nix 'https://raw.githubusercontent.com/SteamNix/SteamNix/refs/heads/main/configuration.nix'
-curl -L -o /mnt/etc/nixos/flake.nix 'https://raw.githubusercontent.com/SteamNix/SteamNix/refs/heads/main/flake.nix'
+curl -L -o /mnt/etc/nixos/configuration.nix 'https://raw.githubusercontent.com/KaitoTLex/SteamNix/refs/heads/main/configuration.nixx'
+curl -L -o /mnt/etc/nixos/flake.nix 'https://raw.githubusercontent.com/KaitoTLex/SteamNix/refs/heads/main/flake.nix'
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 nix-channel --update
 nixos-generate-config --root /mnt
