@@ -17,7 +17,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout                  = 0;
   boot.loader.limine.maxGenerations    = 5;
-  hardware.amdgpu.initrd.enable = true;
+  #hardware.amdgpu.initrd.enable = true;
 
   boot.kernelParams = [ "quiet" ];
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
