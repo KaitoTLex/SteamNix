@@ -109,7 +109,6 @@ programs = {
 hardware.xone.enable = true; # support for the xbox controller USB dongle
 services.getty.autologinUser = "kaitotlex";
 environment = {
-  systemPackages = pkgs.mangohud;
   loginShellInit = ''
     [[ "$(tty)" = "/dev/tty1" ]] && ./gs.sh
   '';
@@ -182,6 +181,7 @@ environment = {
 
   #System specific packages to install
   environment.systemPackages = with pkgs; [
+    mangohud 
     # nvtop
     #osu-lazer
     #davinci-resolve
